@@ -1,0 +1,1 @@
+Saving chat history here to optimize embedding in the future

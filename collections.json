@@ -1,0 +1,119 @@
+{
+  "result": {
+    "collections": [
+      {
+        "name": "geography"
+      },
+      {
+        "name": "education"
+      },
+      {
+        "name": "biology"
+      },
+      {
+        "name": "ebay"
+      },
+      {
+        "name": "marketing"
+      },
+      {
+        "name": "facebook"
+      },
+      {
+        "name": "twitter_x"
+      },
+      {
+        "name": "literature"
+      },
+      {
+        "name": "music"
+      },
+      {
+        "name": "agriculture_forestry_fishery"
+      },
+      {
+        "name": "google"
+      },
+      {
+        "name": "vietnamese"
+      },
+      {
+        "name": "etsy"
+      },
+      {
+        "name": "business"
+      },
+      {
+        "name": "world"
+      },
+      {
+        "name": "history"
+      },
+      {
+        "name": "science"
+      },
+      {
+        "name": "economic"
+      },
+      {
+        "name": "bestbuy"
+      },
+      {
+        "name": "cultural"
+      },
+      {
+        "name": "legal"
+      },
+      {
+        "name": "tiktok"
+      },
+      {
+        "name": "political"
+      },
+      {
+        "name": "shopee"
+      },
+      {
+        "name": "construction_industry"
+      },
+      {
+        "name": "astronomy"
+      },
+      {
+        "name": "chemistry"
+      },
+      {
+        "name": "religion"
+      },
+      {
+        "name": "environment"
+      },
+      {
+        "name": "base_knowledge"
+      },
+      {
+        "name": "psychology"
+      },
+      {
+        "name": "maths"
+      },
+      {
+        "name": "cuisine"
+      },
+      {
+        "name": "physics"
+      },
+      {
+        "name": "super_cell"
+      },
+      {
+        "name": "information_technology"
+      },
+      {
+        "name": "apple"
+      }
+    ]
+  },
+  "status": "ok",
+  "time": 8.391e-6
+}

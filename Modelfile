@@ -1,0 +1,8 @@
+FROM ./vinallama-7b-chat-f16.gguf
+
+PARAMETER temperature 0.1
+PARAMETER top_p 0.9
+PARAMETER num_thread 16
+PARAMETER num_gpu 1
+PARAMETER stop "</end>"
+PARAMETER repeat_penalty 1.1
