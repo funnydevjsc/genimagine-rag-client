@@ -45,6 +45,40 @@ In the WebUI, the term “subject” is used. In this Python client, the equival
 - Utilities for loading and embedding documents/QA into Qdrant
 
 
+## Alignment with Web UI (Laravel)
+
+Important terminology:
+- Subject (Web UI) = Collection (Python client, vector database namespace)
+
+How It Works (Web UI ↔ Python Client):
+1. You create/select subjects in the Web UI. Each subject maps to a collection in this client. 
+2. Fine‑Tuning sends your data to be embedded into that collection.
+3. Data‑Optimization adds Q&A exemplars to improve retrieval grounding for that subject/collection.
+4. Response‑Optimization adds Q&A exemplars to guide response style/format.
+5. Conversations run live chats against the selected subject/collection handled by this client.
+
+Chat modes (as used by the Web UI):
+- Ask Bot (global): General chat across global knowledge; not limited to a specific collection.
+- Ask Business (collection‑scoped): Chat restricted to a selected subject/collection.
+
+Feature mapping (WebUI ↔ Client) summary:
+- Fine‑Tuning (Web) = Add QA Bot (Client): Add QA pairs to global knowledge to improve Ask Bot.
+- Data‑Optimization (Web) = Add QA Business (Client): Add QA pairs to a specific collection to improve Ask Business.
+- Response‑Optimization (Web) = Response Optimization (Client): Prompting/techniques guiding answer style/format.
+- Conversations (Web: by subject) = Conversations (Client: by collection): Maintain multiple chat sessions per collection with context.
+
+Client API endpoints the Web UI calls (see API Endpoints section below for details):
+- POST /ask_bot — Ask Bot (general). Body: subject, username, question.
+- POST /ask_business — Ask Business (collection‑scoped). Body: username, question.
+- POST /add_qa_bot — Fine‑Tuning (global). Body: subject, question, answer.
+- POST /add_qa_for_business — Data‑Optimization (per collection). Body: username, question, answer.
+
+Notes:
+- Always choose the correct subject in the Web UI so your actions target the intended collection in the client.
+- If you reorganize subjects in the Web UI, ensure corresponding collections exist or are migrated here.
+
+For full details, see the Laravel Web UI: https://github.com/funnydevjsc/genimagine-rag-client
+
 ## Project Structure (folders you will work with)
 
 Top‑level directories/files:
