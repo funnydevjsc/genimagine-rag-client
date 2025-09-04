@@ -94,6 +94,10 @@ Example:
 OLLAMA_BASE_URL="http://ollama-server:11434" python main.py
 ```
 
+### Sample input knowledge base
+
+The application uses a sample knowledge base from https://drive.google.com/file/d/1BS3NK_m3BMDig5ZNLp27mA7wuPq1Ceun/view?usp=drive_link to build qdrant vector database.
+
 ## API Endpoints
 
 ### User Management
