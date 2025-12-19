@@ -180,3 +180,4 @@ application_default_credentials.json
 dump_snapshot.pickle
 knowledge_checkpoint.json
 *.gguf
+.DS_Store
